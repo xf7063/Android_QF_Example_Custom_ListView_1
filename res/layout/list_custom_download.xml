@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_item_whire_round" >
+
+    <ImageView
+        android:id="@+id/imgSoftImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_launcher"
+        android:contentDescription="@string/hello_world" />
+
+    <TextView
+        android:id="@+id/txSoftName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgSoftImage"
+        android:layout_marginLeft="28dp"
+        android:layout_toRightOf="@+id/imgSoftImage"
+        android:text="@string/hello_world"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txSoftDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txSoftOther"
+        android:layout_alignRight="@+id/btnDownload"
+        android:layout_below="@+id/txSoftOther"
+        android:layout_marginTop="10dp"
+        android:text="@string/hello_world"
+        android:textColor="#999"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txSoftDesc"
+        android:layout_below="@+id/txSoftDesc"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btnDownload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/txSoftName"
+        android:layout_marginRight="20dp"
+        android:text="@string/txt_download"
+        android:background="#5CACEE" />
+
+    <ProgressBar
+        android:id="@+id/proDownload"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txSoftName"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:minWidth="140dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/txSoftOther"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txSoftName"
+        android:layout_below="@+id/txSoftName"
+        android:text="@string/hello_world"
+        android:textColor="#ccc"
+        android:layout_marginTop="10dp"
+        android:textSize="12sp" />
+
+</RelativeLayout>
